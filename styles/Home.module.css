@@ -1,5 +1,6 @@
 .container {
-  padding: 0 2rem;
+  height: 100vh;
+  background-color: #111;
 }
 
 .main {
@@ -10,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #111;
 }
 
 .footer {
@@ -19,6 +21,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: #111;
 }
 
 .footer a {

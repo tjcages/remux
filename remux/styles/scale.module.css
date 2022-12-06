@@ -1,0 +1,80 @@
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  background-color: rgba(247, 246, 243, 0);
+  overflow: hidden;
+
+  transition: background-color 0.4s var(--easeOutCubic),
+    box-shadow 0.4s var(--easeOutCubic);
+
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: rgba(247, 246, 243, 0.1);
+}
+
+.item.selected {
+  background: linear-gradient(
+    5deg,
+    rgba(247, 246, 243, 0.15),
+    rgba(247, 246, 243, 0.1)
+  );
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(247, 246, 243, 0.2) 0px 0px 0px 1px;
+}
+
+.slider {
+  position: relative;
+}
+
+.track {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+
+  width: 150px;
+  height: 5px;
+
+  background-color: rgba(247, 246, 243, 0.1);
+  border-radius: 0.25rem;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+
+  background-color: rgba(247, 246, 243, 0.5);
+  border-radius: 0.25rem;
+}
+
+.thumb {
+  position: absolute;
+  left: 0%;
+  top: -125%;
+  height: 350%;
+  aspect-ratio: 1 / 1;
+
+  background-color: var(--remuxPrimary);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 2px;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  border-radius: 100%;
+
+  cursor: pointer;
+}

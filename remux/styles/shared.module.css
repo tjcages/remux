@@ -1,0 +1,48 @@
+.selector {
+  position: absolute;
+  top: 20;
+  left: calc(100% + 3px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  min-width: 150px;
+  overflow: hidden;
+
+  z-index: 3;
+
+  background-color: var(--remuxBackground);
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 2px 17px 0px;
+  border: 1px solid var(--remuxBorder);
+
+  display: none;
+  opacity: 0;
+}
+
+.selector.open {
+  display: block;
+  opacity: 1;
+}
+
+.selection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  border-bottom: 1px solid var(--remuxBorder);
+
+  padding: 0.75rem 1rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.4s var(--easeOutCubic);
+}
+
+.selection:hover {
+  background-color: var(--remuxHover);
+}

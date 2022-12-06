@@ -1,7 +1,16 @@
 {
-  "name": "remux-extension",
+  "name": "remux",
+  "description": "Create web previews while building.",
   "version": "0.1.0",
-  "private": true,
+  "main": "remux/index.js",
+  "keywords": [
+    "remux",
+    "react",
+    "react-preview",
+    "nextjs",
+    "preview"
+  ],
+  "author": "tylerj",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
