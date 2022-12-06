@@ -1,5 +1,5 @@
 {
-  "name": "remux",
+  "name": "@tjcages/remux",
   "description": "Create web previews while building.",
   "version": "0.1.0",
   "main": "remux/index.js",
@@ -11,6 +11,9 @@
     "preview"
   ],
   "author": "tylerj",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
