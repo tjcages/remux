@@ -3,6 +3,7 @@
   "description": "Create web previews while building.",
   "version": "0.1.0",
   "main": "remux/index.js",
+  "repository": "tjcages/remux",
   "keywords": [
     "remux",
     "react",
@@ -11,6 +12,7 @@
     "preview"
   ],
   "author": "tylerj",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
